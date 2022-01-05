@@ -21,11 +21,11 @@ public class SQLHandler
     public SQLHandler() throws Exception
     {
         con = null;
-        url = "***REMOVED***";
+        url = "";
         db = "QuarantineDB";
         driver = "sun.jdbc.odbc.JdbcOdbcDriver";
-        user = "***REMOVED***";
-        pass = "***REMOVED***";
+        user = "";
+        pass = "";
         staticMap = "staticmap";
         imageLocations = "imagelocations";
 

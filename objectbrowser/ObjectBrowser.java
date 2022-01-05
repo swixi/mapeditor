@@ -60,7 +60,7 @@ public class ObjectBrowser extends JComponent
         objectBrowser.setTitleAt(panelNumber, label);
     }
 
-    //Maybe use this method from the Editor to dynamically add images to the browser as it loads them from ***REMOVED***
+    //Maybe use this method from the Editor to dynamically add images to the browser as it loads them from game.swixi.com
     public void addImage(int panelNumber, BufferedImage image, String imageName)
     {
         //objectBrowser.getComponent(0).repaint();

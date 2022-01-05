@@ -18,7 +18,7 @@ public class FTPHandler
 {
     private Editor editor;
 
-    protected final String IMAGES_ADDRESS = "***REMOVED***";
+    protected final String IMAGES_ADDRESS = "";
     
     protected FTPClient ftpC;
     protected URL imageURL;
@@ -30,8 +30,8 @@ public class FTPHandler
     protected int numImageCategories = 0;
 
     private String HOST_NAME;
-    protected String username = "***REMOVED***";
-    protected String password = "***REMOVED***";
+    protected String username = "";
+    protected String password = "";
     protected String imageWorkingDirectory = "/edit/objects";
     protected String mapWorkingDirectory = "/edit/maps";
     protected String editWorkingDirectory = "/edit";

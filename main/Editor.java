@@ -25,7 +25,7 @@ import javax.imageio.ImageIO;
 public class Editor extends JApplet implements ActionListener
 {
     //Constants
-    protected final String HOST_NAME = "***REMOVED***";
+    protected final String HOST_NAME = "";
     private static final String MAP_FILE_EXTENSION = ".qom"; //Quarantine Online Map
     private static final String VERSION_STRING = "Version 0.12";
     private static final String LAST_UPDATED_STRING = "Last updated: 07/24/2011";
@@ -925,7 +925,7 @@ public class Editor extends JApplet implements ActionListener
         usingNewMap = false;
     }
 
-    //Attempts to connect to the SQL DB, and update the images stored there with the most current images from ***REMOVED***
+    //Attempts to connect to the SQL DB, and update the images stored there with the most current images from game.swixi.com
     private void updateSQLImages()
     {
         boolean update = true;
@@ -970,27 +970,27 @@ public class Editor extends JApplet implements ActionListener
             imageLogger.showLog();
 
             long time1 = System.nanoTime();
-            BufferedImage currentImage = ImageIO.read(new URL("http://***REMOVED***/edit/objects/Blood/blood1.png"));
+            BufferedImage currentImage = ImageIO.read(new URL("http://game.swixi.com/edit/objects/Blood/blood1.png"));
             imageLogger.addLine("Loaded " + "blood1.png" + " (" +
                     Utility.RoundToDecimalPlace(((System.nanoTime() - time1)/1000000000.0), 3) + " seconds)");
 
             time1 = System.nanoTime();
-            BufferedImage currentImage2 = ImageIO.read(new URL("http://***REMOVED***/edit/objects/Blood/blood2.png"));
+            BufferedImage currentImage2 = ImageIO.read(new URL("http://game.swixi.com/edit/objects/Blood/blood2.png"));
             imageLogger.addLine("Loaded " + "blood2.png" + " (" +
                     Utility.RoundToDecimalPlace(((System.nanoTime() - time1)/1000000000.0), 3) + " seconds)");
 
             time1 = System.nanoTime();
-            BufferedImage currentImage3 = ImageIO.read(new URL("http://***REMOVED***/edit/objects/Blood/blood2.png"));
+            BufferedImage currentImage3 = ImageIO.read(new URL("http://game.swixi.com/edit/objects/Blood/blood2.png"));
             imageLogger.addLine("Loaded " + "blood3.png" + " (" +
                     Utility.RoundToDecimalPlace(((System.nanoTime() - time1)/1000000000.0), 3) + " seconds)");
 
             time1 = System.nanoTime();
-            BufferedImage currentImage4 = ImageIO.read(new URL("http://***REMOVED***/edit/objects/Blood/blood2.png"));
+            BufferedImage currentImage4 = ImageIO.read(new URL("http://game.swixi.com/edit/objects/Blood/blood2.png"));
             imageLogger.addLine("Loaded " + "blood4.png" + " (" +
                     Utility.RoundToDecimalPlace(((System.nanoTime() - time1)/1000000000.0), 3) + " seconds)");
 
             time1 = System.nanoTime();
-            BufferedImage currentImage5 = ImageIO.read(new URL("http://***REMOVED***/edit/objects/Blood/blood2.png"));
+            BufferedImage currentImage5 = ImageIO.read(new URL("http://game.swixi.com/edit/objects/Blood/blood2.png"));
             imageLogger.addLine("Loaded " + "blood5.png" + " (" +
                     Utility.RoundToDecimalPlace(((System.nanoTime() - time1)/1000000000.0), 3) + " seconds)");
         }
